@@ -3460,92 +3460,126 @@ h1.page-title + .tag-cloud-list {
   padding: 0 10px;
   width: 100%;
 }
-#page-header #site-title,
-#page-header #site-subtitle,
-#page-header #scroll-down .scroll-down-effects {
+#site-title,
+#site-subtitle,
+#scroll-down .scroll-down-effects {
   text-align: center;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
+  text-shadow: 0.2rem 0.2rem 0.4rem rgba(0,0,0,0.7);
   line-height: 1.5;
 }
-#page-header #site-title {
+#site-title #site-title,
+#site-subtitle #site-title,
+#scroll-down .scroll-down-effects #site-title {
   margin: 0;
   color: var(--white);
   font-size: 1.85em;
 }
 @media screen and (min-width: 768px) {
-  #page-header #site-title {
+  #site-title #site-title,
+  #site-subtitle #site-title,
+  #scroll-down .scroll-down-effects #site-title {
     font-size: 2.85em;
   }
 }
-#page-header #site-subtitle {
+#site-title #site-subtitle,
+#site-subtitle #site-subtitle,
+#scroll-down .scroll-down-effects #site-subtitle {
   color: var(--light-grey);
   font-size: 1.15em;
 }
 @media screen and (min-width: 768px) {
-  #page-header #site-subtitle {
+  #site-title #site-subtitle,
+  #site-subtitle #site-subtitle,
+  #scroll-down .scroll-down-effects #site-subtitle {
     font-size: 1.72em;
   }
 }
-#page-header #site_social_icons {
+#site-title #site_social_icons,
+#site-subtitle #site_social_icons,
+#scroll-down .scroll-down-effects #site_social_icons {
   display: none;
   margin: 0 auto;
   width: 300px;
   text-align: center;
 }
 @media screen and (max-width: 768px) {
-  #page-header #site_social_icons {
+  #site-title #site_social_icons,
+  #site-subtitle #site_social_icons,
+  #scroll-down .scroll-down-effects #site_social_icons {
     display: block;
   }
 }
-#page-header #site_social_icons .social-icon {
+#site-title #site_social_icons .social-icon,
+#site-subtitle #site_social_icons .social-icon,
+#scroll-down .scroll-down-effects #site_social_icons .social-icon {
   margin: 0 10px;
   color: var(--light-grey);
   text-shadow: 2px 2px 4px rgba(0,0,0,0.15);
   font-size: 1.43em;
 }
-#page-header #scroll-down {
+#site-title #scroll-down,
+#site-subtitle #scroll-down,
+#scroll-down .scroll-down-effects #scroll-down {
   position: absolute;
   bottom: 0;
   width: 100%;
   cursor: pointer;
 }
-#page-header #scroll-down .scroll-down-effects {
+#site-title #scroll-down .scroll-down-effects,
+#site-subtitle #scroll-down .scroll-down-effects,
+#scroll-down .scroll-down-effects #scroll-down .scroll-down-effects {
   position: relative;
   width: 100%;
   color: var(--light-grey);
   font-size: 30px;
 }
-#page-header.not-home-page {
+#site-title.not-home-page,
+#site-subtitle.not-home-page,
+#scroll-down .scroll-down-effects.not-home-page {
   height: 400px;
 }
 @media screen and (max-width: 768px) {
-  #page-header.not-home-page {
+  #site-title.not-home-page,
+  #site-subtitle.not-home-page,
+  #scroll-down .scroll-down-effects.not-home-page {
     height: 280px;
   }
 }
-#page-header #page-site-info {
+#site-title #page-site-info,
+#site-subtitle #page-site-info,
+#scroll-down .scroll-down-effects #page-site-info {
   position: absolute;
   top: 200px;
   padding: 0 10px;
   width: 100%;
 }
 @media screen and (max-width: 768px) {
-  #page-header #page-site-info {
+  #site-title #page-site-info,
+  #site-subtitle #page-site-info,
+  #scroll-down .scroll-down-effects #page-site-info {
     top: 140px;
   }
 }
-#page-header.post-bg {
+#site-title.post-bg,
+#site-subtitle.post-bg,
+#scroll-down .scroll-down-effects.post-bg {
   height: 400px;
 }
 @media screen and (max-width: 768px) {
-  #page-header.post-bg {
+  #site-title.post-bg,
+  #site-subtitle.post-bg,
+  #scroll-down .scroll-down-effects.post-bg {
     height: 360px;
   }
 }
-#page-header.post-bg:before {
+#site-title.post-bg:before,
+#site-subtitle.post-bg:before,
+#scroll-down .scroll-down-effects.post-bg:before {
   background-color: rgba(0,0,0,0.5);
 }
-#page-header #post-info {
+#site-title #post-info,
+#site-subtitle #post-info,
+#scroll-down .scroll-down-effects #post-info {
   position: absolute;
   bottom: 100px;
   padding: 0 8%;
@@ -3553,32 +3587,44 @@ h1.page-title + .tag-cloud-list {
   text-align: center;
 }
 @media screen and (max-width: 900px) {
-  #page-header #post-info {
+  #site-title #post-info,
+  #site-subtitle #post-info,
+  #scroll-down .scroll-down-effects #post-info {
     bottom: 30px;
     text-align: left;
   }
 }
 @media screen and (max-width: 768px) {
-  #page-header #post-info {
+  #site-title #post-info,
+  #site-subtitle #post-info,
+  #scroll-down .scroll-down-effects #post-info {
     bottom: 22px;
     padding: 0 22px;
   }
 }
-#page-header.not-top-img {
+#site-title.not-top-img,
+#site-subtitle.not-top-img,
+#scroll-down .scroll-down-effects.not-top-img {
   margin-bottom: 10px;
   height: 60px;
   background: 0;
 }
-#page-header.not-top-img #nav {
+#site-title.not-top-img #nav,
+#site-subtitle.not-top-img #nav,
+#scroll-down .scroll-down-effects.not-top-img #nav {
   background: rgba(255,255,255,0.8);
   -webkit-box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
   box-shadow: 0 5px 6px -5px rgba(133,133,133,0.6);
 }
-#page-header.not-top-img #nav a {
+#site-title.not-top-img #nav a,
+#site-subtitle.not-top-img #nav a,
+#scroll-down .scroll-down-effects.not-top-img #nav a {
   color: var(--font-color);
   text-shadow: none;
 }
-#page-header.nav-fixed #nav {
+#site-title.nav-fixed #nav,
+#site-subtitle.nav-fixed #nav,
+#scroll-down .scroll-down-effects.nav-fixed #nav {
   position: fixed;
   top: -60px;
   z-index: 91;
@@ -3591,18 +3637,32 @@ h1.page-title + .tag-cloud-list {
   -ms-transition: -ms-transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
-#page-header.nav-fixed #nav a,
-#page-header.nav-fixed #nav #site-name,
-#page-header.nav-fixed #nav #toggle-menu {
+#site-title.nav-fixed #nav a,
+#site-subtitle.nav-fixed #nav a,
+#scroll-down .scroll-down-effects.nav-fixed #nav a,
+#site-title.nav-fixed #nav #site-name,
+#site-subtitle.nav-fixed #nav #site-name,
+#scroll-down .scroll-down-effects.nav-fixed #nav #site-name,
+#site-title.nav-fixed #nav #toggle-menu,
+#site-subtitle.nav-fixed #nav #toggle-menu,
+#scroll-down .scroll-down-effects.nav-fixed #nav #toggle-menu {
   color: var(--font-color);
   text-shadow: none;
 }
-#page-header.nav-fixed #nav a:hover,
-#page-header.nav-fixed #nav #site-name:hover,
-#page-header.nav-fixed #nav #toggle-menu:hover {
+#site-title.nav-fixed #nav a:hover,
+#site-subtitle.nav-fixed #nav a:hover,
+#scroll-down .scroll-down-effects.nav-fixed #nav a:hover,
+#site-title.nav-fixed #nav #site-name:hover,
+#site-subtitle.nav-fixed #nav #site-name:hover,
+#scroll-down .scroll-down-effects.nav-fixed #nav #site-name:hover,
+#site-title.nav-fixed #nav #toggle-menu:hover,
+#site-subtitle.nav-fixed #nav #toggle-menu:hover,
+#scroll-down .scroll-down-effects.nav-fixed #nav #toggle-menu:hover {
   color: #49b1f5;
 }
-#page-header.nav-visible #nav {
+#site-title.nav-visible #nav,
+#site-subtitle.nav-visible #nav,
+#scroll-down .scroll-down-effects.nav-visible #nav {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -o-transition: all 0.5s;
@@ -3614,7 +3674,9 @@ h1.page-title + .tag-cloud-list {
   -ms-transform: translate3d(0, 100%, 0);
   transform: translate3d(0, 100%, 0);
 }
-#page-header.nav-visible + .layout > .aside-content > .sticky_layout {
+#site-title.nav-visible + .layout > .aside-content > .sticky_layout,
+#site-subtitle.nav-visible + .layout > .aside-content > .sticky_layout,
+#scroll-down .scroll-down-effects.nav-visible + .layout > .aside-content > .sticky_layout {
   top: 70px;
   -webkit-transition: top 0.5s;
   -moz-transition: top 0.5s;
